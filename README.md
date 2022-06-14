@@ -6,11 +6,11 @@ Here we build a deep image classifier to classify happy and sad images using ten
 
 
 ### 1.Building a data pipeline 
-Installed some dependencies like tensorflow, opencv and matplotlib.
+Installing some dependencies like tensorflow, opencv and matplotlib.
 
-Downloaded some happy and sad images from google for this project.
+Downloading some happy and sad images from google for this project.
 
-Loaded the data using keras utils.
+Loading the data using keras utils.
 
 
 ### 2.Preprocessing images for deep learning
