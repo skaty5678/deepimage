@@ -1,43 +1,47 @@
-# Deep Image Classifier using Convolution Neural Network.
+# Image Classification with TensorFlow
 
-Here we build a deep image classifier to classify happy and sad images using tensorflow and keras library.
+This code demonstrates the process of training an image classification model using TensorFlow and performing inference on new images.
 
-## Steps involved in the process
+## Prerequisites
 
+- TensorFlow
+- Matplotlib
+- OpenCV (cv2)
 
-### 1.Building a data pipeline 
-Installing some dependencies like tensorflow, opencv and matplotlib.
+## Installation
 
-Downloading some happy and sad images from google for this project.
+1. Install the required dependencies by running the following command:
+    !pip install tensorflow matplotlib opencv-python
 
-Loading the data using keras utils.
+## Usage
 
+1. Preprocess the dataset:
+- Remove images with unsupported file extensions.
+- Normalize the pixel values of the images.
+- Split the dataset into training, validation, and test sets.
 
-### 2.Preprocessing images for deep learning
-Scaling images to (255,255,3).
+2. Build the model:
+- Create a sequential model using the `Sequential` class from TensorFlow.
+- Add convolutional and pooling layers to the model.
+- Flatten the output and add dense layers.
+- Compile the model with appropriate loss and metrics.
 
-Partitioning the dataset into train, validation and test set.
+3. Train the model:
+- Fit the model on the training set.
+- Monitor the validation loss and accuracy during training.
+- Save the best model checkpoints.
 
+4. Evaluate the model:
+- Calculate precision, recall, and accuracy metrics on the test set.
+- Display the evaluation results.
 
-### 3.Creating a deep neural network classifier
-Building the network using Sequential API and layers like Conv2D, maxpooling, Dense, Flatten.
+5. Perform inference on new images:
+- Load the saved model.
+- Read and resize the new image.
+- Perform classification using the trained model.
 
-We used relu and sigmoid activation function. 
+6. Save the trained model:
+- Save the trained model to a file for future use.
 
-Training the Deep Neural Network.
-
-After running 20 epochs our model was able to give 99.5% accuracy.
-
-Plotting model performance.
-
-
-### 4.Evaluating model performance
-Evaluating on the test partition - precision, recall and Binary accuracy.
-
-Testing on new data.
-
-
-### 5.Saving the model for deployment
-Saving the model as h5.
 
 
